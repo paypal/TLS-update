@@ -1,0 +1,10 @@
+# java
+*.class
+
+# net
+*.user
+*.suo
+*.pdb
+.vs
+bin
+obj
