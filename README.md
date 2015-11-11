@@ -3,7 +3,7 @@
 
 The [PCIv3.1 DSS (PDF)](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-1.pdf) mandates (p.46) that TLSv1.0 be retired from service by June 30, 2016. All organizations that handle credit card information are required to comply with this standard.
 
-As part of this obligation, PayPal is updating it's services to require TLSv1.2 for all HTTPS connections.
+As part of this obligation, PayPal is updating it's services to require TLSv1.2 for all HTTPS connections on June 17, 2016. After that date, all TLSv1.0 and TLSv1.1 API connections will be refused.
 
 ## What does this mean for PayPal merchants?
 
