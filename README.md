@@ -36,7 +36,7 @@ To check Java, first verify that Java runtime 7 or higher is installed by runnin
 
 SDK | TLSv1.2 support version
 --- | -------
-[REST Java-SDK](https://github.com/paypal/PayPal-Java-SDK) | Not yet available
+[REST Java-SDK](https://github.com/paypal/PayPal-Java-SDK) | [1.3.0](https://github.com/paypal/PayPal-Java-SDK/releases/tag/v1.3.0)
 [adaptivepayments](https://github.com/paypal/adaptivepayments-sdk-java) | Not yet available
 [adaptiveaccounts](https://github.com/paypal/adaptiveaccounts-sdk-java) | Not yet available
 [buttonmanager](https://github.com/paypal/buttonmanager-sdk-java) | Not yet available
