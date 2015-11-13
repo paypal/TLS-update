@@ -93,6 +93,16 @@ To check Python, in a shell on your **production system**, run:
 
 ### Ruby
 
+SDK | TLSv1.2 support version
+--- | -------
+[REST Ruby-SDK](https://github.com/paypal/PayPal-Ruby-SDK) | [1.3.4](https://github.com/paypal/PayPal-Ruby-SDK/releases/tag/v1.3.4)
+[adaptivepayments](https://github.com/paypal/adaptivepayments-sdk-ruby) | Not yet available
+[adaptiveaccounts](https://github.com/paypal/adaptiveaccounts-sdk-ruby) | Not yet available
+[buttonmanager](https://github.com/paypal/buttonmanager-sdk-ruby) | Not yet available
+[permissions](https://github.com/paypal/permissions-sdk-ruby) | Not yet available
+[merchant (merchant 2.x)](https://github.com/paypal/merchant-sdk-ruby) | Not yet available
+legacy (merchant 1.x) | Not supported
+
 Ruby 2.0.0 or above is required to use the TLSv1.2 capablity of the system supplied OpenSSL. OpenSSL 1.0.1c is the first version that supplies TLSv1.2
 
 To check Ruby, in a shell on your **production system**, run:
