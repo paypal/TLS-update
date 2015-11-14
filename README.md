@@ -81,6 +81,11 @@ To check PHP, in a shell on your **production system**, run:
 
 ### Python
 
+
+SDK | TLSv1.2 support version
+--- | -------
+[REST Python-SDK](https://github.com/paypal/PayPal-python-sdk) | [v1.11.1](https://github.com/paypal/PayPal-Python-SDK/releases/tag/v1.11.1)
+
 Python uses the system supplied OpenSSL. TLSv1.2 requires OpenSSL 1.0.1c or higher.
 
 To check Python, in a shell on your **production system**, run: 
@@ -113,6 +118,10 @@ To check Ruby, in a shell on your **production system**, run:
 - On failure, a `OpenSSL::SSL::SSLError` or `EOFError` will be thrown.
 
 ### Node.js
+
+SDK | TLSv1.2 support version
+--- | -------
+[REST Node-SDK](https://github.com/paypal/PayPal-node-SDK) | [1.6.4](https://github.com/paypal/PayPal-node-SDK/releases/tag/v1.6.4)
 
 Node uses OpenSSL. TLSv1.2 requires OpenSSL 1.0.1c or higher.
 
