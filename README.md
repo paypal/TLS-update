@@ -36,7 +36,7 @@ To check Java, first verify that Java runtime 7 or higher is installed by runnin
 
 SDK | TLSv1.2 support version
 --- | -------
-[REST Java-SDK](https://github.com/paypal/PayPal-Java-SDK) | [1.3.0](https://github.com/paypal/PayPal-Java-SDK/releases/tag/v1.3.0)
+[REST Java-SDK](https://github.com/paypal/PayPal-Java-SDK) | [1.3.0](https://github.com/paypal/PayPal-Java-SDK/releases)
 [adaptivepayments](https://github.com/paypal/adaptivepayments-sdk-java) | Not yet available
 [adaptiveaccounts](https://github.com/paypal/adaptiveaccounts-sdk-java) | Not yet available
 [buttonmanager](https://github.com/paypal/buttonmanager-sdk-java) | Not yet available
@@ -81,11 +81,6 @@ To check PHP, in a shell on your **production system**, run:
 
 ### Python
 
-
-SDK | TLSv1.2 support version
---- | -------
-[REST Python-SDK](https://github.com/paypal/PayPal-python-sdk) | [v1.11.1](https://github.com/paypal/PayPal-Python-SDK/releases/tag/v1.11.1)
-
 Python uses the system supplied OpenSSL. TLSv1.2 requires OpenSSL 1.0.1c or higher.
 
 To check Python, in a shell on your **production system**, run: 
@@ -98,16 +93,6 @@ To check Python, in a shell on your **production system**, run:
 
 ### Ruby
 
-SDK | TLSv1.2 support version
---- | -------
-[REST Ruby-SDK](https://github.com/paypal/PayPal-Ruby-SDK) | [1.3.4](https://github.com/paypal/PayPal-Ruby-SDK/releases/tag/v1.3.4)
-[adaptivepayments](https://github.com/paypal/adaptivepayments-sdk-ruby) | Not yet available
-[adaptiveaccounts](https://github.com/paypal/adaptiveaccounts-sdk-ruby) | Not yet available
-[buttonmanager](https://github.com/paypal/buttonmanager-sdk-ruby) | Not yet available
-[permissions](https://github.com/paypal/permissions-sdk-ruby) | Not yet available
-[merchant (merchant 2.x)](https://github.com/paypal/merchant-sdk-ruby) | Not yet available
-legacy (merchant 1.x) | Not supported
-
 Ruby 2.0.0 or above is required to use the TLSv1.2 capablity of the system supplied OpenSSL. OpenSSL 1.0.1c is the first version that supplies TLSv1.2
 
 To check Ruby, in a shell on your **production system**, run:
@@ -118,10 +103,6 @@ To check Ruby, in a shell on your **production system**, run:
 - On failure, a `OpenSSL::SSL::SSLError` or `EOFError` will be thrown.
 
 ### Node.js
-
-SDK | TLSv1.2 support version
---- | -------
-[REST Node-SDK](https://github.com/paypal/PayPal-node-SDK) | [1.6.4](https://github.com/paypal/PayPal-node-SDK/releases/tag/v1.6.4)
 
 Node uses OpenSSL. TLSv1.2 requires OpenSSL 1.0.1c or higher.
 
