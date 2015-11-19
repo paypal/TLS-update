@@ -24,7 +24,7 @@ Java version | TLSv1.2 support
 7 | Available. TLSv1.2 must be explicitly enabled. A [PayPal SDK update](supported-sdk-versions.md) or code change may be required.
 8 | Default. TLSv1.2 is enabled by default. No code change is required, though it is always recommended to make sure you're using the latest [PayPal SDK](supported-sdk-versions.md).
 
-**NOTE for IBM Java:** [TLSv1.2 can be enbled via a system override flag in V6 service refresh 10 or higher.](http://www-01.ibm.com/support/knowledgecenter/SSYKE2_6.0.0/com.ibm.java.security.component.60.doc/security-component/jsse2Docs/overrideSSLprotocol.html)
+**NOTE for IBM Java:** [TLSv1.2 can be enabled via a system override flag in V6 service refresh 10 or higher.](http://www-01.ibm.com/support/knowledgecenter/SSYKE2_6.0.0/com.ibm.java.security.component.60.doc/security-component/jsse2Docs/overrideSSLprotocol.html)
 
 To check Java, first verify that Java runtime 7 or higher is installed by running `java -version` from command line. If you have Java 6 or below, please upgrade it first. Then download [the provided test application](java). And in a shell on your **production system**, run:
 `> java -jar TlsCheck.jar`
@@ -70,14 +70,14 @@ legacy (merchant 1.x) | Not supported
 
 ### PHP
 
-PHP uses the system suppied CURL library. Version 7.34.0 or later is required.
+PHP uses the system supplied CURL library. Version 7.34.0 or later is required.
 
 To check PHP, in a shell on your **production system**, run:
 
 `$ php -r '$ch = curl_init(); curl_setopt($ch, CURLOPT_URL, "https://tlstest.paypal.com/"); print_r(curl_exec($ch));'`
 
 - On success, `PayPal_Connection_OK` is printed.
-- On failure, a nework error will be printed.
+- On failure, a network error will be printed.
 
 ### Python
 
@@ -93,7 +93,7 @@ To check Python, in a shell on your **production system**, run:
 
 ### Ruby
 
-Ruby 2.0.0 or above is required to use the TLSv1.2 capablity of the system supplied OpenSSL. OpenSSL 1.0.1c is the first version that supplies TLSv1.2
+Ruby 2.0.0 or above is required to use the TLSv1.2 capability of the system supplied OpenSSL. OpenSSL 1.0.1c is the first version that supplies TLSv1.2
 
 To check Ruby, in a shell on your **production system**, run:
 
@@ -119,7 +119,7 @@ To check Node, in a shell on your **production system**, run:
 
 TLSv1.2 was made default for client connections in API 20 (Android 4.4W "KitKat - wearable extensions"). 
 
-All Android app developers will want to make sure their code and PayPal SDK provide explicit support for TLSv1.2. Apps should be tested on Android 4.1-4.4 (API 16-19) devices to verify correct implimentation. 
+All Android app developers will want to make sure their code and PayPal SDK provide explicit support for TLSv1.2. Apps should be tested on Android 4.1-4.4 (API 16-19) devices to verify correct implementation. 
 
 After the TLSv1.2 upgrade, native app support for user devices older than API 16 (Android 4.1 "Jelly Bean") will not be available. Fortunately, as of October 29, 2015, [Google reports less than 7.5% of devices accessing the Play store are API 15 or earlier](http://developer.android.com/about/dashboards/index.html#Platform).
 
@@ -138,6 +138,6 @@ TLSv1.2 support was introduced in iOS 5. The [PayPal iOS SDK](https://github.com
 
 ### Windows
 
-PayPal has discontinued SDK support for native Windows Phone apps. The related backend services will be shut down soon. Please update to a web browser integration. We recommenend [Braintree v.zero for JavaScript](https://developers.braintreepayments.com/javascript+dotnet/guides/client-sdk). 
+PayPal has discontinued SDK support for native Windows Phone apps. The related backend services will be shut down soon. Please update to a web browser integration. We recommend [Braintree v.zero for JavaScript](https://developers.braintreepayments.com/javascript+dotnet/guides/client-sdk). 
 
 
