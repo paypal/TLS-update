@@ -1,9 +1,8 @@
-
 # TLSv1.2 Requirement
 
 The [PCIv3.1 DSS (PDF)](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-1.pdf) mandates (p.46) that TLSv1.0 be retired from service by June 30, 2016. All organizations that handle credit card information are required to comply with this standard.
 
-As part of this obligation, PayPal is updating it's services to require TLSv1.2 for all HTTPS connections on June 17, 2016. After that date, all TLSv1.0 and TLSv1.1 API connections will be refused.
+As part of this obligation, PayPal is updating its services to require TLSv1.2 for all HTTPS connections on June 17, 2016. After that date, all TLSv1.0 and TLSv1.1 API connections will be refused.
 
 ## What does this mean for PayPal merchants?
 
@@ -21,8 +20,8 @@ To help merchants get started, we've put together a few notes for common environ
 Java version | TLSv1.2 support
 --- | ---
 6 and earlier | No support. A runtime update is required. (Except possibly for IBM Java. See note below.)
-7 | Available. TLSv1.2 must be explicitly enabled. A [PayPal SDK update](supported-sdk-versions.md) or code change may be required.
-8 | Default. TLSv1.2 is enabled by default. No code change is required, though it is always recommended to make sure you're using the latest [PayPal SDK](supported-sdk-versions.md).
+7 | Available. TLSv1.2 must be explicitly enabled. A [PayPal SDK update](#paypal-java-sdk-support) or code change may be required.
+8 | Default. TLSv1.2 is enabled by default. No code change is required, though it is always recommended to make sure you're using the latest [PayPal SDK](#paypal-java-sdk-support).
 
 **NOTE for IBM Java:** [TLSv1.2 can be enabled via a system override flag in V6 service refresh 10 or higher.](http://www-01.ibm.com/support/knowledgecenter/SSYKE2_6.0.0/com.ibm.java.security.component.60.doc/security-component/jsse2Docs/overrideSSLprotocol.html)
 
@@ -32,7 +31,7 @@ To check Java, first verify that Java runtime 7 or higher is installed by runnin
 - On success, `PayPal_Connection_OK` is printed.
 - On failure a networking exception will be thrown.
 
-#### PayPal SDK support
+#### PayPal Java SDK support
 
 SDK | TLSv1.2 support version
 --- | -------
@@ -139,5 +138,3 @@ TLSv1.2 support was introduced in iOS 5. The [PayPal iOS SDK](https://github.com
 ### Windows
 
 PayPal has discontinued SDK support for native Windows Phone apps. The related backend services will be shut down soon. Please update to a web browser integration. We recommend [Braintree v.zero for JavaScript](https://developers.braintreepayments.com/javascript+dotnet/guides/client-sdk). 
-
-
