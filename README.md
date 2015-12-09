@@ -39,6 +39,7 @@ SDK | TLSv1.2 support version
 [sdk-core](https://github.com/paypal/sdk-core-java) | [1.7.0](https://github.com/paypal/sdk-core-java/releases/tag/v1.7.0)
 [adaptivepayments](https://github.com/paypal/adaptivepayments-sdk-java) | [2.9.117](https://github.com/paypal/adaptivepayments-sdk-java/releases/tag/v2.9.117)
 [adaptiveaccounts](https://github.com/paypal/adaptiveaccounts-sdk-java) | [2.6.106](https://github.com/paypal/adaptiveaccounts-sdk-java/releases/tag/2.6.106)
+[invoice](https://github.com/paypal/invoice-sdk-java) | Not yet available
 [buttonmanager](https://github.com/paypal/buttonmanager-sdk-java) | Not yet available
 [permissions](https://github.com/paypal/permissions-sdk-java) | Not yet available
 [merchant (merchant 2.x)](https://github.com/paypal/merchant-sdk-java) | Not yet available
@@ -63,6 +64,7 @@ SDK | TLSv1.2 support version
 [REST NET-SDK](https://github.com/paypal/PayPal-NET-SDK) | [1.7.0](https://github.com/paypal/PayPal-NET-SDK/releases)
 [adaptivepayments](https://github.com/paypal/adaptivepayments-sdk-dotnet) | [2.9.117](https://github.com/paypal/adaptivepayments-sdk-java/releases/tag/v2.9.117)
 [adaptiveaccounts](https://github.com/paypal/adaptiveaccounts-sdk-dotnet) | Not yet available
+[invoice](https://github.com/paypal/invoice-sdk-dotnet) | Not yet available
 [buttonmanager](https://github.com/paypal/buttonmanager-sdk-dotnet) | Not yet available
 [permissions](https://github.com/paypal/permissions-sdk-dotnet) | Not yet available
 [merchant (merchant 2.x)](https://github.com/paypal/merchant-sdk-dotnet) | Not yet available
