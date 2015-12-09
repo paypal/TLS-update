@@ -62,7 +62,7 @@ Then, run [TlsCheck](net/TlsCheck) in a shell on your **production system**:
 SDK | TLSv1.2 support version
 --- | -------
 [REST NET-SDK](https://github.com/paypal/PayPal-NET-SDK) | [1.7.0](https://github.com/paypal/PayPal-NET-SDK/releases)
-[adaptivepayments](https://github.com/paypal/adaptivepayments-sdk-dotnet) | [2.9.117](https://github.com/paypal/adaptivepayments-sdk-java/releases/tag/v2.9.117)
+[adaptivepayments](https://github.com/paypal/adaptivepayments-sdk-dotnet) | Not yet available
 [adaptiveaccounts](https://github.com/paypal/adaptiveaccounts-sdk-dotnet) | Not yet available
 [invoice](https://github.com/paypal/invoice-sdk-dotnet) | Not yet available
 [buttonmanager](https://github.com/paypal/buttonmanager-sdk-dotnet) | Not yet available
