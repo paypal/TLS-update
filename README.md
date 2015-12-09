@@ -37,8 +37,8 @@ SDK | TLSv1.2 support version
 --- | -------
 [REST Java-SDK](https://github.com/paypal/PayPal-Java-SDK) | [1.3.0](https://github.com/paypal/PayPal-Java-SDK/releases)
 [sdk-core](https://github.com/paypal/sdk-core-java) | [1.7.0](https://github.com/paypal/sdk-core-java/releases/tag/v1.7.0)
-[adaptivepayments](https://github.com/paypal/adaptivepayments-sdk-java) | Not yet available
-[adaptiveaccounts](https://github.com/paypal/adaptiveaccounts-sdk-java) | Not yet available
+[adaptivepayments](https://github.com/paypal/adaptivepayments-sdk-java) | [2.9.117](https://github.com/paypal/adaptivepayments-sdk-java/releases/tag/v2.9.117)
+[adaptiveaccounts](https://github.com/paypal/adaptiveaccounts-sdk-java) | [2.6.106](https://github.com/paypal/adaptiveaccounts-sdk-java/releases/tag/2.6.106)
 [buttonmanager](https://github.com/paypal/buttonmanager-sdk-java) | Not yet available
 [permissions](https://github.com/paypal/permissions-sdk-java) | Not yet available
 [merchant (merchant 2.x)](https://github.com/paypal/merchant-sdk-java) | Not yet available
