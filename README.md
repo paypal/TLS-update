@@ -96,7 +96,7 @@ To check Python, in a shell on your **production system**, run:
 
 ### Ruby
 
-Ruby 2.0.0 or above is required to use the TLSv1.2 capability of the system supplied OpenSSL. OpenSSL 1.0.1c is the first version that supplies TLSv1.2
+Ruby 2.0.0 or above is required to use the TLSv1.2 capability of the system supplied OpenSSL. OpenSSL 1.0.1c is the first version that supplies TLSv1.2. That is, both `Ruby > 2.0.0` and `OpenSSL > 1.0.1c` are required. Then, run `bundle update` to update your dependencies.
 
 To check Ruby, in a shell on your **production system**, run:
 
