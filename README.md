@@ -98,6 +98,8 @@ To check Python, in a shell on your **production system**, run:
 
 Ruby 2.0.0 or above is required to use the TLSv1.2 capability of the system supplied OpenSSL. OpenSSL 1.0.1c is the first version that supplies TLSv1.2. That is, both `Ruby > 2.0.0` and `OpenSSL > 1.0.1c` are required. Then, run `bundle update` to update your dependencies.
 
+*For legacy Ruby SDK (such that was packaged in `PP_Ruby_NVP_SDK.zip`), download [this SDK](https://github.com/paypal/TLS-update/blob/master/ruby/PP_Ruby_NVP_SDK.zip)*
+
 To check Ruby, in a shell on your **production system**, run:
 
 `$ ruby -r'net/HTTP' -e 'uri = URI("https://tlstest.paypal.com/"); puts Net::HTTP.get(uri)'`
