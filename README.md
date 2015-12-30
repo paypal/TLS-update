@@ -77,10 +77,14 @@ PHP uses the system supplied CURL library. Version 7.34.0 or later is required.
 
 To check PHP, in a shell on your **production system**, run:
 
-`$ php -r '$ch = curl_init(); curl_setopt($ch, CURLOPT_URL, "https://tlstest.paypal.com/"); print_r(curl_exec($ch));'`
+`$ php -r '$ch = curl_init(); curl_setopt($ch, CURLOPT_URL, "https://tlstest.paypal.com/"); var_dump(curl_exec($ch));'`
 
 - On success, `PayPal_Connection_OK` is printed.
-- On failure, a network error will be printed.
+- On failure, `bool(false)` will be printed.
+
+You can get the specific error with `curl_error($ch)`:
+
+`php -r '$ch = curl_init(); curl_setopt($ch, CURLOPT_URL, "https://tlstest.paypal.com/"); var_dump(curl_exec($ch)); var_dump(curl_error($ch));'`
 
 ### Python
 
