@@ -1,14 +1,12 @@
 # TLSv1.2 Requirement
 
-The [PCIv3.1 DSS (PDF)](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-1.pdf) mandates (p.46) that TLSv1.0 be retired from service by June 30, 2016. All organizations that handle credit card information are required to comply with this standard.
-
-As part of this obligation, PayPal is updating its services to require TLSv1.2 for all HTTPS connections on June 17, 2016. After that date, all TLSv1.0 and TLSv1.1 API connections will be refused.
+The Payment Card Industry (PCI) Council has [mandated](http://blog.pcisecuritystandards.org/migrating-from-ssl-and-early-tls) that early versions of TLS be retired from service.  All organizations that handle credit card information are required to comply with this standard. As part of this obligation, PayPal is updating its services to require TLS 1.2 for all HTTPS connections. At this time, PayPal will also require HTTP/1.1 for all connections.
 
 ## What does this mean for PayPal merchants?
 
 Merchants should verify that all of their systems are capable of using the TLSv1.2 protocol with a SHA-256 certificate. In most cases this means ensuring that you are up to date with security updates, including current versions of operating systems, encryption libraries, and runtime environments.
 
-PayPal is making this upgrade alongside the rest of the payments industry. **All credit card processors must make these changes** by the deadline above, so you should expect to see similar announcements from other payment providers you might use. 
+PayPal is making this upgrade alongside the rest of the payments industry. **All credit card processors must make these changes** by the PCI deadline, so you should expect to see similar announcements from other payment providers you might use.
 
 To help merchants get started, we've put together a few notes for common environments. These checks assume that you have installed all the libraries required by the PayPal REST SDKs. For these checks to be valid, they must be run on a production system or one that *exactly* matches the configuration you have in production.
 
