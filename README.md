@@ -136,7 +136,7 @@ Users of the PayPal SDK should simply update to the latest version. Outside the 
 
 SDK | TLSv1.2 support version
 --- | -------
-[Android SDK](https://github.com/paypal/PayPal-Android-SDK) | [2.12.1](https://github.com/paypal/PayPal-Android-SDK/releases)
+[Android SDK](https://github.com/paypal/PayPal-Android-SDK) | [2.13.0](https://github.com/paypal/PayPal-Android-SDK/releases)
 MPL | Not yet available
 
 ### iOS
