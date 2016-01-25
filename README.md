@@ -1,14 +1,12 @@
 # TLSv1.2 Requirement
 
-The [PCIv3.1 DSS (PDF)](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-1.pdf) mandates (p.46) that TLSv1.0 be retired from service by June 30, 2016. All organizations that handle credit card information are required to comply with this standard.
-
-As part of this obligation, PayPal is updating its services to require TLSv1.2 for all HTTPS connections on June 17, 2016. After that date, all TLSv1.0 and TLSv1.1 API connections will be refused.
+The Payment Card Industry (PCI) Council has [mandated](http://blog.pcisecuritystandards.org/migrating-from-ssl-and-early-tls) that early versions of TLS be retired from service.  All organizations that handle credit card information are required to comply with this standard. As part of this obligation, PayPal is updating its services to require TLS 1.2 for all HTTPS connections. At this time, PayPal will also require HTTP/1.1 for all connections.
 
 ## What does this mean for PayPal merchants?
 
 Merchants should verify that all of their systems are capable of using the TLSv1.2 protocol with a SHA-256 certificate. In most cases this means ensuring that you are up to date with security updates, including current versions of operating systems, encryption libraries, and runtime environments.
 
-PayPal is making this upgrade alongside the rest of the payments industry. **All credit card processors must make these changes** by the deadline above, so you should expect to see similar announcements from other payment providers you might use. 
+PayPal is making this upgrade alongside the rest of the payments industry. **All credit card processors must make these changes** by the PCI deadline, so you should expect to see similar announcements from other payment providers you might use.
 
 To help merchants get started, we've put together a few notes for common environments. These checks assume that you have installed all the libraries required by the PayPal REST SDKs. For these checks to be valid, they must be run on a production system or one that *exactly* matches the configuration you have in production.
 
@@ -77,10 +75,14 @@ PHP uses the system supplied CURL library. Version 7.34.0 or later is required.
 
 To check PHP, in a shell on your **production system**, run:
 
-`$ php -r '$ch = curl_init(); curl_setopt($ch, CURLOPT_URL, "https://tlstest.paypal.com/"); print_r(curl_exec($ch));'`
+`$ php -r '$ch = curl_init(); curl_setopt($ch, CURLOPT_URL, "https://tlstest.paypal.com/"); var_dump(curl_exec($ch));'`
 
 - On success, `PayPal_Connection_OK` is printed.
-- On failure, a network error will be printed.
+- On failure, `bool(false)` will be printed.
+
+You can get the specific error with `curl_error($ch)`:
+
+`php -r '$ch = curl_init(); curl_setopt($ch, CURLOPT_URL, "https://tlstest.paypal.com/"); var_dump(curl_exec($ch)); var_dump(curl_error($ch));'`
 
 ### Python
 
@@ -126,7 +128,7 @@ TLSv1.2 was made default for client connections in API 20 (Android 4.4W "KitKat 
 
 All Android app developers will want to make sure their code and PayPal SDK provide explicit support for TLSv1.2. Apps should be tested on Android 4.1-4.4 (API 16-19) devices to verify correct implementation. 
 
-After the TLSv1.2 upgrade, native app support for user devices older than API 16 (Android 4.1 "Jelly Bean") will not be available. Fortunately, as of October 29, 2015, [Google reports less than 7.5% of devices accessing the Play store are API 15 or earlier](http://developer.android.com/about/dashboards/index.html#Platform).
+After the TLSv1.2 upgrade, native app support for user devices older than API 16 (Android 4.1 "Jelly Bean") will not be available. Fortunately, as of January 4, 2016, [Google reports less than 5.9% of devices accessing the Play store are API 15 or earlier](http://developer.android.com/about/dashboards/index.html#Platform).
 
 Users of the PayPal SDK should simply update to the latest version. Outside the SDK, we've provided [an example Android app](android/) to illustrate how to support TLSv1.2. 
 
@@ -134,7 +136,7 @@ Users of the PayPal SDK should simply update to the latest version. Outside the 
 
 SDK | TLSv1.2 support version
 --- | -------
-[Android SDK](https://github.com/paypal/PayPal-Android-SDK) | [2.12.1](https://github.com/paypal/PayPal-Android-SDK/releases)
+[Android SDK](https://github.com/paypal/PayPal-Android-SDK) | [2.13.0](https://github.com/paypal/PayPal-Android-SDK/releases)
 MPL | Not yet available
 
 ### iOS
