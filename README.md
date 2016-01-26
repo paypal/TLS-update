@@ -41,7 +41,7 @@ SDK | TLSv1.2 support version
 [buttonmanager](https://github.com/paypal/buttonmanager-sdk-java) | [2.7.106](https://github.com/paypal/buttonmanager-sdk-java/releases/tag/2.7.106)
 [permissions](https://github.com/paypal/permissions-sdk-java) | [2.6.109](https://github.com/paypal/permissions-sdk-java/releases/tag/v2.6.109)
 [merchant (merchant 2.x)](https://github.com/paypal/merchant-sdk-java) | [2.14.117](https://github.com/paypal/merchant-sdk-java/releases/tag/v2.14.117)
-[legacy (merchant 1.x)] | A drop-in replacement for `paypal_base.jar` (delete `-nvp` or `-soap` prefix): [NVP](https://github.com/paypal/TLS-update/blob/master/java/paypal_base-nvp.jar) [SOAP](https://github.com/paypal/TLS-update/blob/master/java/paypal_base-soap.jar)
+legacy (merchant 1.x)| A drop-in replacement for `paypal_base.jar` (delete `-nvp` or `-soap` prefix): [NVP](https://github.com/paypal/TLS-update/blob/master/java/paypal_base-nvp.jar) [SOAP](https://github.com/paypal/TLS-update/blob/master/java/paypal_base-soap.jar)
 
 ### .NET
 
@@ -55,7 +55,7 @@ Then, run [TlsCheck](net/TlsCheck) in a shell on your **production system**:
 
 - On success, `PayPal_Connection_OK` is printed.
 
-#### PayPal SDK support
+#### PayPal .NET SDK support
 
 SDK | TLSv1.2 support version
 --- | -------
