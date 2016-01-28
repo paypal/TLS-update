@@ -97,6 +97,7 @@ To check Python, in a shell on your **production system**, run:
 - On success, `PayPal_Connection_OK` is printed.
 - On failure, an `URLError` will be raised: <br/>
 `urllib2.URLError: <urlopen error EOF occurred in violation of protocol (_ssl.c:590)>`
+`urllib2.URLError: <urlopen error [Errno 54] Connection reset by peer>`
 
 ### Ruby
 
