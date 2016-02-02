@@ -92,7 +92,10 @@ Python uses the system supplied OpenSSL. TLSv1.2 requires OpenSSL 1.0.1c or high
 
 To check Python, in a shell on your **production system**, run: 
 
+For Python 2.x:
 `$ python -c "import urllib2; print(urllib2.urlopen('https://tlstest.paypal.com/').read())"`
+For Python 3.x:
+`$ python -c "import urllib.request; print(urllib.request.urlopen('https://tlstest.paypal.com/').read())"`
 
 - On success, `PayPal_Connection_OK` is printed.
 - On failure, an `URLError` will be raised: <br/>
