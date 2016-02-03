@@ -137,7 +137,7 @@ TLSv1.2 was made default for client connections in API 20 (Android 4.4W "KitKat 
 
 All Android app developers will want to make sure their code and PayPal SDK provide explicit support for TLSv1.2. Apps should be tested on Android 4.1-4.4 (API 16-19) devices to verify correct implementation. 
 
-After the TLSv1.2 upgrade, native app support for user devices older than API 16 (Android 4.1 "Jelly Bean") will not be available. Fortunately, as of January 4, 2016, [Google reports less than 5.9% of devices accessing the Play store are API 15 or earlier](http://developer.android.com/about/dashboards/index.html#Platform).
+After the TLSv1.2 upgrade, native app support for user devices older than API 16 (Android 4.1 "Jelly Bean") will not be available. Fortunately, as of February 1, 2016, [Google reports less than 5.3% of devices accessing the Play store are API 15 or earlier](http://developer.android.com/about/dashboards/index.html#Platform).
 
 Users of the PayPal SDK should simply update to the latest version. Outside the SDK, we've provided [an example Android app](android/) to illustrate how to support TLSv1.2. 
 
