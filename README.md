@@ -71,7 +71,7 @@ legacy (merchant 1.x) | Not supported
 
 ### PHP
 
-PHP uses the system supplied CURL library. Version 7.34.0 or later is required. You may also need to update your SSL/TLS libraries, see [here](http://curl.haxx.se/docs/ssl-compared.html) for more details.
+PHP uses the system supplied CURL library. OpenSSL used by CURL library is required to be 1.0.1c or higher. You may also need to update your SSL/TLS libraries, see [here](http://curl.haxx.se/docs/ssl-compared.html) for more details.
 
 To check PHP, in a shell on your **production system**, run:
 
@@ -85,6 +85,7 @@ You can get the specific error with `curl_error($ch)`:
 `php -r '$ch = curl_init(); curl_setopt($ch, CURLOPT_URL, "https://tlstest.paypal.com/"); var_dump(curl_exec($ch)); var_dump(curl_error($ch));'`
 
 > **Note:** Please make sure that your command line test is using the same versions of PHP & SSL/TLS libraries as your web server
+> **Note:** If you are using MAMP or XAMPP as your development setup, currently the PHP packaged with them comes with a lower version of OpenSSL, which currently cannot be updated easily. You can find more information on this issue and find a temporary workaround [here](https://github.com/paypal/PayPal-PHP-SDK/issues/484#issuecomment-176240130)
 
 ### Python
 
