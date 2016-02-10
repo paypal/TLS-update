@@ -60,13 +60,13 @@ Then, run [TlsCheck](net/TlsCheck) in a shell on your **production system**:
 SDK | TLSv1.2 support version
 --- | -------
 [REST NET-SDK](https://github.com/paypal/PayPal-NET-SDK) | [1.7.0](https://github.com/paypal/PayPal-NET-SDK/releases)
-[sdk-core](https://github.com/paypal/sdk-core-dotnet) | Not yet available
-[adaptivepayments](https://github.com/paypal/adaptivepayments-sdk-dotnet) | Not yet available
-[adaptiveaccounts](https://github.com/paypal/adaptiveaccounts-sdk-dotnet) | Not yet available
-[invoice](https://github.com/paypal/invoice-sdk-dotnet) | Not yet available
-[buttonmanager](https://github.com/paypal/buttonmanager-sdk-dotnet) | Not yet available
-[permissions](https://github.com/paypal/permissions-sdk-dotnet) | Not yet available
-[merchant (merchant 2.x)](https://github.com/paypal/merchant-sdk-dotnet) | Not yet available
+[sdk-core](https://github.com/paypal/sdk-core-dotnet) | [1.7.0](https://github.com/paypal/sdk-core-dotnet/releases)
+[adaptivepayments](https://github.com/paypal/adaptivepayments-sdk-dotnet) | Requires [sdk-core 1.7.0 or later](https://github.com/paypal/sdk-core-dotnet/releases)
+[adaptiveaccounts](https://github.com/paypal/adaptiveaccounts-sdk-dotnet) | Requires [sdk-core 1.7.0 or later](https://github.com/paypal/sdk-core-dotnet/releases)
+[invoice](https://github.com/paypal/invoice-sdk-dotnet) | Requires [sdk-core 1.7.0 or later](https://github.com/paypal/sdk-core-dotnet/releases)
+[buttonmanager](https://github.com/paypal/buttonmanager-sdk-dotnet) | Requires [sdk-core 1.7.0 or later](https://github.com/paypal/sdk-core-dotnet/releases)
+[permissions](https://github.com/paypal/permissions-sdk-dotnet) | Requires [sdk-core 1.7.0 or later](https://github.com/paypal/sdk-core-dotnet/releases)
+[merchant (merchant 2.x)](https://github.com/paypal/merchant-sdk-dotnet) | Requires [sdk-core 1.7.0 or later](https://github.com/paypal/sdk-core-dotnet/releases)
 legacy (merchant 1.x) | Not supported
 
 ### PHP
