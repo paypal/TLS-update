@@ -72,7 +72,7 @@ SDK | TLSv1.2 support version
 [buttonmanager](https://github.com/paypal/buttonmanager-sdk-dotnet) | Requires [sdk-core 1.7.1 or later](https://github.com/paypal/sdk-core-dotnet/releases)
 [permissions](https://github.com/paypal/permissions-sdk-dotnet) | Requires [sdk-core 1.7.1 or later](https://github.com/paypal/sdk-core-dotnet/releases)
 [merchant (merchant 2.x)](https://github.com/paypal/merchant-sdk-dotnet) | Requires [sdk-core 1.7.1 or later](https://github.com/paypal/sdk-core-dotnet/releases)
-legacy (merchant 1.x) | Not supported
+legacy (merchant 1.x) | Not supported - please [upgrade to merchant 2.x](https://github.com/paypal/merchant-sdk-dotnet/wiki/Upgrade-Process-from-Legacy-Merchant-SDK)
 
 ### PHP
 
