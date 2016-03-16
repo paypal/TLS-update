@@ -1,13 +1,12 @@
 package com.paypal.developer.paypaltlscheck;
 
-import android.util.Log;
-
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 import javax.net.ssl.SSLContext;
@@ -60,13 +59,13 @@ public class TlsSocketFactory extends SSLSocketFactory {
     }
 
     private Socket enableTLSOnSocket(Socket socket) {
-        if(socket != null && (socket instanceof SSLSocket)) {
-            SSLSocket sslSocket = (SSLSocket) socket;
-            Log.d("TEST-supportedProtocols", Arrays.asList(sslSocket.getSupportedProtocols()).toString());
-                    // We could enable TLSv1.2 only here, but we take a permissive approach for the client
-                    // and leave it up to the server to require TLSv1.2
-            sslSocket.setEnabledProtocols(sslSocket.getSupportedProtocols());
-            Log.d("TEST-enabledProtocols", Arrays.asList(sslSocket.getEnabledProtocols()).toString());
+        if(socket instanceof SSLSocket) {
+            ArrayList<String> supportedProtocols =
+                    new ArrayList<>(Arrays.asList(((SSLSocket) socket).getSupportedProtocols()));
+            supportedProtocols.retainAll(Arrays.asList("TLSv1.2", "TLSv1.1", "TLSv1"));
+
+            ((SSLSocket)socket).setEnabledProtocols(supportedProtocols.toArray(
+                    new String[supportedProtocols.size()]));
         }
         return socket;
     }
