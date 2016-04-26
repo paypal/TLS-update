@@ -46,7 +46,7 @@ SDK | TLSv1.2 support version
 [buttonmanager](https://github.com/paypal/buttonmanager-sdk-java) | [2.7.106](https://github.com/paypal/buttonmanager-sdk-java/releases/tag/2.7.106)
 [permissions](https://github.com/paypal/permissions-sdk-java) | [2.6.109](https://github.com/paypal/permissions-sdk-java/releases/tag/v2.6.109)
 [merchant (merchant 2.x)](https://github.com/paypal/merchant-sdk-java) | [2.14.117](https://github.com/paypal/merchant-sdk-java/releases/tag/v2.14.117)
-[legacy (merchant 1.x)] | drop-in replacements for `paypal_base.jar` (delete `-nvp` or `-soap` suffix from file name): [NVP](https://github.com/paypal/TLS-update/blob/master/java/paypal_base-nvp.jar) [SOAP](https://github.com/paypal/TLS-update/blob/master/java/paypal_base-soap.jar)
+[legacy (merchant 1.x)](https://github.com/paypal/PayPal-Legacy-Java-SDK/) | [1.1.0](https://github.com/paypal/PayPal-Legacy-Java-SDK/releases/tag/v1.1.0)
 
 ### .NET
 
