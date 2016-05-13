@@ -23,7 +23,7 @@ To help merchants get started, we've put together a few notes for common environ
 Java version | TLSv1.2 support
 --- | ---
 5 and earlier | No support.
-6 | Available. TLSv1.2 must be explicitly enabled. Requires at least [Oracle Java version `6u115`](http://www.oracle.com/technetwork/java/javase/documentation/overview-156328.html) or [IBM V6 service refresh 10](http://www-01.ibm.com/support/knowledgecenter/SSYKE2_6.0.0/com.ibm.java.security.component.60.doc/security-component/jsse2Docs/overrideSSLprotocol.html).  A [PayPal SDK update](#paypal-java-sdk-support) or code change may be required.
+6 | Available. TLSv1.2 must be explicitly enabled. Requires at least [Oracle Java version `6u115 b32`](http://www.oracle.com/technetwork/java/javase/documentation/overview-156328.html) or [IBM V6 service refresh 10](http://www-01.ibm.com/support/knowledgecenter/SSYKE2_6.0.0/com.ibm.java.security.component.60.doc/security-component/jsse2Docs/overrideSSLprotocol.html).  A [PayPal SDK update](#paypal-java-sdk-support) or code change may be required.
 7 | Available. TLSv1.2 must be explicitly enabled. A [PayPal SDK update](#paypal-java-sdk-support) or code change may be required.
 8 | Default. TLSv1.2 is enabled by default. No code change is required, though it is always recommended to make sure you're using the latest [PayPal SDK](#paypal-java-sdk-support).
 
