@@ -75,18 +75,31 @@ legacy (merchant 1.x) | Not supported - please [upgrade to merchant 2.x](https:/
 
 ### PHP
 
-PHP uses the system supplied CURL library. OpenSSL used by CURL library is required to be 1.0.1c or higher. You may also need to update your SSL/TLS libraries, see [here](http://curl.haxx.se/docs/ssl-compared.html) for more details.
+PHP uses the system supplied curl library. The curl library requires OpenSSL `1.0.1c` or higher. You may also need to [update your SSL/TLS libraries](http://curl.haxx.se/docs/ssl-compared.html).
 
-To check PHP, in a shell on your **production system**, run:
+> NOTE:
+- There are three places where you will find OpenSSL:
+    - OpenSSL installed in your Operating System `openssl version`.
+    - OpenSSL extension installed in your PHP.  This can be found in your `php.ini`.
+    - OpenSSL used by PHP_CURL. `curl_version()`.
+- All these three OpenSSL extensions can be different, and can be updated separately.
+- The one PayPal or any other PHP SDK uses to make HTTP connections is the PHP_CURL (option 3). PHP_CURL OpenSSL is the one that needs to support TLSv1.2.
+- `php_curl` library uses its own version of OpenSSL library, which is not the same as one used by PHP (`openssl.so` file that is  in `php.ini`).
+- the openssl_version information of curl can be found by running 
+```
+php -r 'echo json_encode(curl_version(), JSON_PRETTY_PRINT);'
+```
+- The `php_curl` version shown here could be different from the `openssl version`, as they are two different components.
+- Please keep in mind when updating your OpenSSL libraries, you need to update `php_curl` OpenSSL version and not the OS OpenSSL version.
 
-`$ php -r '$ch = curl_init(); curl_setopt($ch, CURLOPT_URL, "https://tlstest.paypal.com/"); var_dump(curl_exec($ch));'`
+To check PHP, in a shell on your **production system**:
+
+1. Download [cacert.pem](php/cacert.pem).
+2. Download [TlsCheck.php](php/TlsCheck.php).
+3. Run `php -f TlsCheck.php`.
 
 - On success, `PayPal_Connection_OK` is printed.
-- On failure, `bool(false)` will be printed.
-
-You can get the specific error with `curl_error($ch)`:
-
-`php -r '$ch = curl_init(); curl_setopt($ch, CURLOPT_URL, "https://tlstest.paypal.com/"); var_dump(curl_exec($ch)); var_dump(curl_error($ch));'`
+- On failure, `curl_error error information` will be printed.
 
 > **Note:** Please make sure that your command line test is using the same versions of PHP & SSL/TLS libraries as your web server
 > **Note:** If you are using MAMP or XAMPP as your development setup, currently the PHP packaged with them comes with a lower version of OpenSSL, which currently cannot be updated easily. You can find more information on this issue and find a temporary workaround [here](https://github.com/paypal/PayPal-PHP-SDK/issues/484#issuecomment-176240130)
