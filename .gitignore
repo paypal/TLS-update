@@ -8,3 +8,6 @@
 .vs
 bin
 obj
+
+# Misc
+.DS_Store
