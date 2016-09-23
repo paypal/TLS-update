@@ -1,17 +1,17 @@
 # TLSv1.2 Requirement
 
-The Payment Card Industry (PCI) Council has [mandated](http://blog.pcisecuritystandards.org/migrating-from-ssl-and-early-tls) that early versions of TLS be retired from service.  All organizations that handle credit card information are required to comply with this standard. As part of this obligation, PayPal is updating its services to require TLS 1.2 for all HTTPS connections. At this time, PayPal will also require HTTP/1.1 for all connections.
+The Payment Card Industry (PCI) Council has [mandated](http://blog.pcisecuritystandards.org/migrating-from-ssl-and-early-tls) that early versions of TLS be retired from service.  All organizations that handle credit card information are required to comply with this standard. As part of this obligation, PayPal and Braintree are updating its services to require TLS 1.2 for all HTTPS connections. PayPal and Braintree will also require HTTP/1.1 for all connections.
 
 You may find more official relevant information at the [PayPal Technical Support website](https://www.paypal-techsupport.com):
 * [TLS 1.2 and HTTP/1.1 Upgrade Microsite](https://www.paypal-knowledge.com/infocenter/index?page=content&id=FAQ1914&expand=true&locale=en_US)
 * [2016 Merchant Security Roadmap Microsite](https://www.paypal-knowledge.com/infocenter/index?page=content&id=FAQ1913&expand=true&locale=en_US)
 * [SSL Certificate Upgrade Microsite](https://www.paypal-knowledge.com/infocenter/index?page=content&id=FAQ1766&expand=true&locale=en_US)
 
-## What does this mean for PayPal merchants?
+## What does this mean for PayPal and Braintree merchants?
 
 Merchants should verify that all of their systems are capable of using the TLSv1.2 protocol with a SHA-256 certificate. In most cases this means ensuring that you are up to date with security updates, including current versions of operating systems, encryption libraries, and runtime environments.
 
-PayPal is making this upgrade alongside the rest of the payments industry. **All credit card processors must make these changes** by the PCI deadline, so you should expect to see similar announcements from other payment providers you might use.
+PayPal and Braintree are making this upgrade alongside the rest of the payments industry. **All credit card processors must make these changes** by the PCI deadline, so you should expect to see similar announcements from other payment providers you might use.
 
 To help merchants get started, we've put together a few notes for common environments. These checks assume that you have installed all the libraries required by the PayPal REST SDKs. For these checks to be valid, they must be run on a production system or one that *exactly* matches the configuration you have in production.
 
@@ -127,7 +127,7 @@ For Python 3.x:
 
 Ruby 2.0.0 or above is required to use the TLSv1.2 capability of the system supplied OpenSSL. OpenSSL 1.0.1c is the first version that supplies TLSv1.2. That is, both `Ruby > 2.0.0` and `OpenSSL > 1.0.1c` are required. Then, run `bundle update` to update your dependencies.
 
-*For legacy Ruby SDK (such that was packaged in `PP_Ruby_NVP_SDK.zip`), download [this SDK](https://github.com/paypal/TLS-update/blob/master/ruby/PP_Ruby_NVP_SDK.zip)*
+*For the PayPal legacy Ruby SDK (packaged as `PP_Ruby_NVP_SDK.zip`), please download [this update](https://github.com/paypal/TLS-update/blob/master/ruby/PP_Ruby_NVP_SDK.zip).*
 
 To check Ruby, in a shell on your **production system**, run:
 
@@ -157,7 +157,7 @@ All Android app developers will want to make sure their code and PayPal SDK prov
 
 After the TLSv1.2 upgrade, native app support for user devices older than API 16 (Android 4.1 "Jelly Bean") will not be available. Fortunately, as of September 5, 2016, [Google reports 3.0% of devices accessing the Play store are API 15 or earlier](http://developer.android.com/about/dashboards/index.html#Platform).
 
-Users of the PayPal SDK should simply update to the latest version. Outside the SDK, we've provided [an example Android app](android/) to illustrate how to support TLSv1.2. 
+Users of the PayPal or Braintree Android SDKs should simply update to the latest version. Outside the SDK, we've provided [an example Android app](android/) to illustrate how to support TLSv1.2. 
 
 #### PayPal SDK support
 
@@ -168,8 +168,8 @@ SDK | TLSv1.2 support version
 
 ### iOS
 
-TLSv1.2 support was introduced in iOS 5. The [PayPal iOS SDK](https://github.com/paypal/PayPal-iOS-SDK) requires iOS 7 or higher. Apps built since 2013 will likely not need any updates.
+TLSv1.2 support was introduced in iOS 5. The [PayPal iOS SDK](https://github.com/paypal/PayPal-iOS-SDK) and the [Braintree iOS SDK](https://github.com/braintree/braintree_ios) both require iOS 7 or higher. Apps built since 2013 will likely not need any updates.
 
 ### Windows
 
-PayPal has discontinued SDK support for native Windows Phone apps. The related backend services will be shut down soon. Please update to a web browser integration. We recommend [Braintree v.zero for JavaScript](https://developers.braintreepayments.com/javascript+dotnet/guides/client-sdk). 
+PayPal has discontinued SDK support for native Windows Phone apps. The related backend services are shut down. For a web browser integration, we recommend [Braintree v.zero for JavaScript](https://developers.braintreepayments.com/javascript+dotnet/guides/client-sdk). 
