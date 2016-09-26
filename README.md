@@ -153,7 +153,7 @@ To check Node, in a shell on your **production system**, run:
 
 TLSv1.2 was made default for client connections in API 20 (Android 4.4W "KitKat - wearable extensions"). 
 
-All Android app developers will want to make sure their code and PayPal SDK provide explicit support for TLSv1.2. Apps should be tested on Android 4.1-4.4 (API 16-19) devices to verify correct implementation. 
+All Android app developers will want to make sure their code and PayPal or Braintree SDKs provide explicit support for TLSv1.2. Apps should be tested on Android 4.1-4.4 (API 16-19) devices to verify correct implementation. 
 
 After the TLSv1.2 upgrade, native app support for user devices older than API 16 (Android 4.1 "Jelly Bean") will not be available. Fortunately, as of September 5, 2016, [Google reports 3.0% of devices accessing the Play store are API 15 or earlier](http://developer.android.com/about/dashboards/index.html#Platform).
 
