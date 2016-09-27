@@ -13,7 +13,7 @@ Merchants should verify that all of their systems are capable of using the TLSv1
 
 PayPal and Braintree are making this upgrade alongside the rest of the payments industry. **All credit card processors must make these changes** by the PCI deadline, so you should expect to see similar announcements from other payment providers you might use.
 
-To help merchants get started, we've put together a few notes for common environments. These checks assume that you have installed all the libraries required by the PayPal REST SDKs. For these checks to be valid, they must be run on a production system or one that *exactly* matches the configuration you have in production.
+To help merchants get started, we've put together a few notes for common environments. These checks assume that you have installed all the libraries required by the PayPal REST and Braintree SDKs. For these checks to be valid, they must be run on a production system or one that *exactly* matches the configuration you have in production.
 
 ### Java
 
@@ -30,8 +30,8 @@ Java version | TLSv1.2 support
 To check Java, first verify that Java runtime 6 or higher is installed by running `java -version` from command line. If you have Java 5 or below, please upgrade it first. Then download [the provided test application](java). And in a shell on your **production system**, run:
 `> java -jar TlsCheck.jar`
 
-- On success, `PayPal_Connection_OK` is printed.
-- On failure a networking exception will be thrown.
+- On success, `Successfully connected to TLS 1.2 endpoint.` is printed.
+- On failure, `Failed to connect to TLS 1.2 endpoint.` is printed.
 
 #### PayPal Java SDK support
 
@@ -99,7 +99,7 @@ To check PHP, in a shell on your **production system**:
 3. Run `php -f TlsCheck.php`.
 
 - On success, `PayPal_Connection_OK` is printed.
-- On failure, `curl_error error information` will be printed.
+- On failure, `curl_error information` will be printed. This will help you determine the openssl version used.
 
 > **Note:** Please make sure that your command line test is using the same versions of PHP & SSL/TLS libraries as your web server
 > **Note:** If you are using MAMP or XAMPP as your development setup, currently the PHP packaged with them comes with a lower version of OpenSSL, which currently cannot be updated easily. You can find more information on this issue and find a temporary workaround [here](https://github.com/paypal/PayPal-PHP-SDK/issues/484#issuecomment-176240130)
