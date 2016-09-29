@@ -35,7 +35,7 @@ To check Java, first verify that Java runtime 6 or higher is installed by runnin
 
 #### PayPal Java SDK support
 
-SDK | TLSv1.2 support version
+SDK | TLSv1.2 supported version
 --- | -------
 [REST Java-SDK](https://github.com/paypal/PayPal-Java-SDK) | [1.4.0](https://github.com/paypal/PayPal-Java-SDK/releases)
 [sdk-core](https://github.com/paypal/sdk-core-java) | [1.7.0](https://github.com/paypal/sdk-core-java/releases/tag/v1.7.0)
@@ -61,7 +61,7 @@ Then, run [TlsCheck](net/TlsCheck) in a shell on your **production system**:
 
 #### PayPal .NET SDK support
 
-SDK | TLSv1.2 support version
+SDK | TLSv1.2 supported version
 --- | -------
 [REST NET-SDK](https://github.com/paypal/PayPal-NET-SDK) | [1.7.3](https://github.com/paypal/PayPal-NET-SDK/releases)
 [sdk-core](https://github.com/paypal/sdk-core-dotnet) | [1.7.1](https://github.com/paypal/sdk-core-dotnet/releases)
@@ -125,7 +125,7 @@ For Python 3.x:
 
 ### Ruby
 
-Ruby 2.0.0 or above is required to use the TLSv1.2 capability of the system supplied OpenSSL. OpenSSL 1.0.1c is the first version that supplies TLSv1.2. That is, both `Ruby > 2.0.0` and `OpenSSL > 1.0.1c` are required. Then, run `bundle update` to update your dependencies.
+Ruby 2.0.0 or above is required to use TLSv1.2 from the system supplied OpenSSL. TLSv1.2 requires OpenSSL 1.0.1c or higher. Therefore, both `Ruby > 2.0.0` and `OpenSSL > 1.0.1c` are required. You may also need to run `bundle update` to update your dependencies.
 
 *For the PayPal legacy Ruby SDK (packaged as `PP_Ruby_NVP_SDK.zip`), please download [this update](https://github.com/paypal/TLS-update/blob/master/ruby/PP_Ruby_NVP_SDK.zip).*
 
@@ -138,7 +138,7 @@ To check Ruby, in a shell on your **production system**, run:
 
 ### Node.js
 
-Node uses OpenSSL. TLSv1.2 requires OpenSSL 1.0.1c or higher.
+Node.js uses the system supplied OpenSSL. TLSv1.2 requires OpenSSL 1.0.1c or higher.
 
 To check Node, in a shell on your **production system**, run:
 
@@ -161,7 +161,7 @@ Users of the PayPal or Braintree Android SDKs should simply update to the latest
 
 #### PayPal SDK support
 
-SDK | TLSv1.2 support version
+SDK | TLSv1.2 supported version
 --- | -------
 [Android SDK](https://github.com/paypal/PayPal-Android-SDK) | [2.13.0](https://github.com/paypal/PayPal-Android-SDK/releases)
 [MPL](https://developer.paypal.com/docs/classic/mobile/ht_mpl-itemPayment-Android/) | [1.5.6_49](https://github.com/paypal/sdk-packages/tree/gh-pages/MPL)
