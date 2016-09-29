@@ -166,6 +166,13 @@ SDK | TLSv1.2 supported version
 [Android SDK](https://github.com/paypal/PayPal-Android-SDK) | [2.13.0](https://github.com/paypal/PayPal-Android-SDK/releases)
 [MPL](https://developer.paypal.com/docs/classic/mobile/ht_mpl-itemPayment-Android/) | [1.5.6_49](https://github.com/paypal/sdk-packages/tree/gh-pages/MPL)
 
+#### Braintree SDK support
+
+SDK | TLS v1.2 supported version
+--- | --------
+[Android 2.x SDK](https://github.com/braintree/braintree_android/) | [2.1.0](https://github.com/braintree/braintree_android/releases/)
+[Android 1.x SDK](https://github.com/braintree/braintree_android/) | [1.7.6](https://github.com/braintree/braintree_android/releases/)
+
 ### iOS
 
 TLSv1.2 support was introduced in iOS 5. The [PayPal iOS SDK](https://github.com/paypal/PayPal-iOS-SDK) and the [Braintree iOS SDK](https://github.com/braintree/braintree_ios) both require iOS 7 or higher. Apps built since 2013 will likely not need any updates.
