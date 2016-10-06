@@ -33,19 +33,9 @@ To check Java, first verify that Java runtime 6 or higher is installed by runnin
 - On success, `Successfully connected to TLS 1.2 endpoint.` is printed.
 - On failure, `Failed to connect to TLS 1.2 endpoint.` is printed.
 
-#### PayPal Java SDK support
-
-SDK | TLSv1.2 supported version
---- | -------
-[REST Java-SDK](https://github.com/paypal/PayPal-Java-SDK) | [1.4.0](https://github.com/paypal/PayPal-Java-SDK/releases)
-[sdk-core](https://github.com/paypal/sdk-core-java) | [1.7.0](https://github.com/paypal/sdk-core-java/releases/tag/v1.7.0)
-[adaptivepayments](https://github.com/paypal/adaptivepayments-sdk-java) | [2.9.117](https://github.com/paypal/adaptivepayments-sdk-java/releases/tag/v2.9.117)
-[adaptiveaccounts](https://github.com/paypal/adaptiveaccounts-sdk-java) | [2.6.106](https://github.com/paypal/adaptiveaccounts-sdk-java/releases/tag/2.6.106)
-[invoice](https://github.com/paypal/invoice-sdk-java) | [2.7.117](https://github.com/paypal/invoice-sdk-java/releases/tag/v2.7.117)
-[buttonmanager](https://github.com/paypal/buttonmanager-sdk-java) | [2.7.106](https://github.com/paypal/buttonmanager-sdk-java/releases/tag/2.7.106)
-[permissions](https://github.com/paypal/permissions-sdk-java) | [2.6.109](https://github.com/paypal/permissions-sdk-java/releases/tag/v2.6.109)
-[merchant (merchant 2.x)](https://github.com/paypal/merchant-sdk-java) | [2.14.117](https://github.com/paypal/merchant-sdk-java/releases/tag/v2.14.117)
-[legacy (merchant 1.x)](https://github.com/paypal/PayPal-Legacy-Java-SDK/) | [1.1.0](https://github.com/paypal/PayPal-Legacy-Java-SDK/releases/tag/v1.1.0)
+##### Supported SDKs
+- [PayPal](PayPal/README.md#java)
+- [Braintree](Braintree/README.md#java)
 
 ### .NET
 
@@ -59,19 +49,9 @@ Then, run [TlsCheck](net/TlsCheck) in a shell on your **production system**:
 
 - On success, `PayPal_Connection_OK` is printed.
 
-#### PayPal .NET SDK support
-
-SDK | TLSv1.2 supported version
---- | -------
-[REST NET-SDK](https://github.com/paypal/PayPal-NET-SDK) | [1.7.3](https://github.com/paypal/PayPal-NET-SDK/releases)
-[sdk-core](https://github.com/paypal/sdk-core-dotnet) | [1.7.1](https://github.com/paypal/sdk-core-dotnet/releases)
-[adaptivepayments](https://github.com/paypal/adaptivepayments-sdk-dotnet) | Requires [sdk-core 1.7.1 or later](https://github.com/paypal/sdk-core-dotnet/releases)
-[adaptiveaccounts](https://github.com/paypal/adaptiveaccounts-sdk-dotnet) | Requires [sdk-core 1.7.1 or later](https://github.com/paypal/sdk-core-dotnet/releases)
-[invoice](https://github.com/paypal/invoice-sdk-dotnet) | Requires [sdk-core 1.7.1 or later](https://github.com/paypal/sdk-core-dotnet/releases)
-[buttonmanager](https://github.com/paypal/buttonmanager-sdk-dotnet) | Requires [sdk-core 1.7.1 or later](https://github.com/paypal/sdk-core-dotnet/releases)
-[permissions](https://github.com/paypal/permissions-sdk-dotnet) | Requires [sdk-core 1.7.1 or later](https://github.com/paypal/sdk-core-dotnet/releases)
-[merchant (merchant 2.x)](https://github.com/paypal/merchant-sdk-dotnet) | Requires [sdk-core 1.7.1 or later](https://github.com/paypal/sdk-core-dotnet/releases)
-legacy (merchant 1.x) | Not supported - please [upgrade to merchant 2.x](https://github.com/paypal/merchant-sdk-dotnet/wiki/Upgrade-Process-from-Legacy-Merchant-SDK)
+##### Supported SDKs
+- [PayPal](PayPal/README.md#net)
+- [Braintree](Braintree/README.md#net)
 
 ### PHP
 
@@ -159,19 +139,9 @@ After the TLSv1.2 upgrade, native app support for user devices older than API 16
 
 Users of the PayPal or Braintree Android SDKs should simply update to the latest version. Outside the SDK, we've provided [an example Android app](android/) to illustrate how to support TLSv1.2. 
 
-#### PayPal SDK support
-
-SDK | TLSv1.2 supported version
---- | -------
-[Android SDK](https://github.com/paypal/PayPal-Android-SDK) | [2.13.0](https://github.com/paypal/PayPal-Android-SDK/releases)
-[MPL](https://developer.paypal.com/docs/classic/mobile/ht_mpl-itemPayment-Android/) | [1.5.6_49](https://github.com/paypal/sdk-packages/tree/gh-pages/MPL)
-
-#### Braintree SDK support
-
-SDK | TLS v1.2 supported version
---- | --------
-[Android 2.x SDK](https://github.com/braintree/braintree_android/) | [2.1.0](https://github.com/braintree/braintree_android/releases/)
-[Android 1.x SDK](https://github.com/braintree/braintree_android/) | [1.7.6](https://github.com/braintree/braintree_android/releases/)
+##### Supported SDKs
+- [PayPal](PayPal/README.md#android)
+- [Braintree](Braintree/README.md#android)
 
 ### iOS
 
