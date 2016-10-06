@@ -45,9 +45,10 @@ SDK | TLSv1.2 supported version
 
 ## Other languages
 
-See the following sections for language-specific support:
+These languages do not require any SDK upgrades, but you still need to check your production system. Please see the following sections for language-specific support:
 
 * [Ruby](https://github.com/paypal/TLS-update#ruby)
 * [PHP](https://github.com/paypal/TLS-update#php)
 * [Python](https://github.com/paypal/TLS-update#python)
-* [Node](https://github.com/paypal/TLS-update#nodejs)
+* [Node.js](https://github.com/paypal/TLS-update#nodejs)
+* [iOS](https://github.com/paypal/TLS-update#ios)
