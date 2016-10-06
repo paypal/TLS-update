@@ -149,4 +149,4 @@ TLSv1.2 support was introduced in iOS 5. The [PayPal iOS SDK](https://github.com
 
 ### Windows
 
-PayPal has discontinued SDK support for native Windows Phone apps. The related backend services are shut down. For a web browser integration, we recommend [Braintree v.zero for JavaScript](https://developers.braintreepayments.com/javascript+dotnet/guides/client-sdk). 
+Neither PayPal, nor Braintree support any Windows SDKs. For a web browser integration, we recommend [Braintree v.zero for JavaScript](https://developers.braintreepayments.com/javascript+dotnet/guides/client-sdk). 
