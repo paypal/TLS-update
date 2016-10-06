@@ -1,6 +1,6 @@
 ## PayPal TLSv1.2 supported SDKs
 
-This page contains PayPal SDKs that supports TLSv1.2. Visit [here for list of all Braintree SDKs](Braintree/README.md).
+This page contains PayPal SDKs that supports TLSv1.2. Visit [here for list of all Braintree SDKs](/Braintree/README.md).
 
 ## Java
 
@@ -36,3 +36,5 @@ SDK | TLSv1.2 supported version
 --- | -------
 [Android SDK](https://github.com/paypal/PayPal-Android-SDK) | [2.13.0](https://github.com/paypal/PayPal-Android-SDK/releases)
 [MPL](https://developer.paypal.com/docs/classic/mobile/ht_mpl-itemPayment-Android/) | [1.5.6_49](https://github.com/paypal/sdk-packages/tree/gh-pages/MPL)
+
+> For Ruby, PHP, Python and Node please see [our main README](/README.md) for language specific support.
