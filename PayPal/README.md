@@ -4,6 +4,8 @@ This page contains PayPal SDKs that supports TLSv1.2. Visit [here for list of al
 
 ## Java
 
+For Java environments, please verify you have the latest release below, and additionally verify your Java setup using the steps outlined [here](https://github.com/paypal/TLS-update#java).
+
 SDK | TLSv1.2 supported version
 --- | -------
 [REST Java-SDK](https://github.com/paypal/PayPal-Java-SDK) | [1.4.0](https://github.com/paypal/PayPal-Java-SDK/releases)
@@ -17,6 +19,8 @@ SDK | TLSv1.2 supported version
 [legacy (merchant 1.x)](https://github.com/paypal/PayPal-Legacy-Java-SDK/) | [1.1.0](https://github.com/paypal/PayPal-Legacy-Java-SDK/releases/tag/v1.1.0)
 
 ## .NET
+
+For .NET environments, please verify you have the latest release below, and additionally verify your .NET setup using the steps outlined [here](https://github.com/paypal/TLS-update#net).
 
 SDK | TLSv1.2 supported version
 --- | -------
@@ -32,9 +36,18 @@ legacy (merchant 1.x) | Not supported - please [upgrade to merchant 2.x](https:/
 
 ## Android
 
+For Android SDK integrations, please verify you have at least one of the latest releases below for payments [to continue operating on API 16-19 devices](https://github.com/paypal/TLS-update#android).
+
 SDK | TLSv1.2 supported version
 --- | -------
 [Android SDK](https://github.com/paypal/PayPal-Android-SDK) | [2.13.0](https://github.com/paypal/PayPal-Android-SDK/releases)
 [MPL](https://developer.paypal.com/docs/classic/mobile/ht_mpl-itemPayment-Android/) | [1.5.6_49](https://github.com/paypal/sdk-packages/tree/gh-pages/MPL)
 
-> For Ruby, PHP, Python and Node please see [our main README](/README.md) for language specific support.
+## Other languages
+
+See the following sections for language-specific support:
+
+* [Ruby](https://github.com/paypal/TLS-update#ruby)
+* [PHP](https://github.com/paypal/TLS-update#php)
+* [Python](https://github.com/paypal/TLS-update#python)
+* [Node](https://github.com/paypal/TLS-update#nodejs)
