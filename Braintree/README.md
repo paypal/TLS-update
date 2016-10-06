@@ -10,6 +10,14 @@ SDK | TLSv1.2 supported version
 --- | -------
 [braintree_java](https://github.com/braintree/braintree_java/) | [2.67.0](https://github.com/braintree/braintree_java/releases/)
 
+## .NET
+
+For .NET environments, please verify you have the latest release below, and additionally verify your .NET setup using the steps outlined [here](https://github.com/paypal/TLS-update#net).
+
+SDK | TLSv1.2 supported version
+--- | -------
+[braintree_dotnet](https://github.com/braintree/braintree_dotnet) | [TBD (not yet complete)](https://github.com/braintree/braintree_dotnet/releases)
+
 ## Android
 
 For Android SDK integrations, please verify you have at least one of the latest releases below for payments to continue operating on API 16-19 devices, as described [here](https://github.com/paypal/TLS-update#android).
