@@ -111,7 +111,7 @@ Ruby 2.0.0 or above is required to use TLSv1.2 from the system supplied OpenSSL.
 
 To check Ruby, in a shell on your **production system**, run:
 
-`$ ruby -r'net/HTTP' -e 'uri = URI("https://tlstest.paypal.com/"); puts Net::HTTP.get(uri)'`
+`$ ruby -r'net/http' -e 'puts Net::HTTP.get(URI("https://tlstest.paypal.com/"))'`
 
 - On success, `PayPal_Connection_OK` will be printed.
 - On failure, a `OpenSSL::SSL::SSLError` or `EOFError` will be thrown.
