@@ -42,7 +42,7 @@ To check Java, first verify that Java runtime 6 or higher is installed by runnin
 The .NET 4.5 (or greater) runtime must be installed for TLSv1.2 to be enabled.
   * The TLS version can be set via [`ServicePointManager.SecurityProtocol`](https://msdn.microsoft.com/en-us/library/system.net.securityprotocoltype(v=vs.110).aspx).
 
-To check .NET, first verify you have .NET framework 4.5 or higher by running [NetFrameworkVersions](net/NetFrameworkVersions) on the console of your production system. If you do not have .NET 4.5 or above, please upgrade it first. 
+To check .NET, first verify you have .NET framework 4.5 or higher by running [NetFrameworkVersions](net/NetFrameworkVersions) on the console of your production system. If you do not have .NET 4.5 or above, please upgrade it first.
 
 Then, run [TlsCheck](net/TlsCheck) in a shell on your **production system**:
 `> TlsCheck.exe`
@@ -131,13 +131,13 @@ To check Node, in a shell on your **production system**, run:
 
 ### Android
 
-TLSv1.2 was made default for client connections in API 20 (Android 4.4W "KitKat - wearable extensions"). 
+TLSv1.2 was made default for client connections in API 20 (Android 4.4W "KitKat - wearable extensions").
 
-All Android app developers will want to make sure their code and PayPal or Braintree SDKs provide explicit support for TLSv1.2. Apps should be tested on Android 4.1-4.4 (API 16-19) devices to verify correct implementation. 
+All Android app developers will want to make sure their code and PayPal or Braintree SDKs provide explicit support for TLSv1.2. Apps should be tested on Android 4.1-4.4 (API 16-19) devices to verify correct implementation.
 
 After the TLSv1.2 upgrade, native app support for user devices older than API 16 (Android 4.1 "Jelly Bean") will not be available. Fortunately, as of September 5, 2016, [Google reports 3.0% of devices accessing the Play store are API 15 or earlier](http://developer.android.com/about/dashboards/index.html#Platform).
 
-Users of the PayPal or Braintree Android SDKs should simply update to the latest version. Outside the SDK, we've provided [an example Android app](android/) to illustrate how to support TLSv1.2. 
+Users of the PayPal or Braintree Android SDKs should simply update to the latest version. Outside of the SDK, we have provided [an example Android app](android/) to illustrate how to support TLSv1.2.
 
 ##### Supported SDKs
 - [PayPal](PayPal/README.md#android)
@@ -149,4 +149,4 @@ TLSv1.2 support was introduced in iOS 5. The [PayPal iOS SDK](https://github.com
 
 ### Windows
 
-Neither PayPal, nor Braintree support any Windows SDKs. For a web browser integration, we recommend [Braintree v.zero for JavaScript](https://developers.braintreepayments.com/javascript+dotnet/guides/client-sdk). 
+Neither PayPal, nor Braintree support any Windows SDKs. For a web browser integration, we recommend [Braintree v.zero for JavaScript](https://developers.braintreepayments.com/javascript+dotnet/guides/client-sdk).
