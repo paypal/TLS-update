@@ -16,7 +16,7 @@ For .NET environments, please verify you have the latest release below, and addi
 
 SDK | TLSv1.2 supported version
 --- | -------
-[braintree_dotnet](https://github.com/braintree/braintree_dotnet) | [TBD (not yet complete)](https://github.com/braintree/braintree_dotnet/releases)
+[braintree_dotnet](https://github.com/braintree/braintree_dotnet) | [3.1.0](https://github.com/braintree/braintree_dotnet/releases/)
 
 ## Android
 
