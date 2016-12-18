@@ -9,6 +9,8 @@ For more official, relevant information, see the [PayPal Technical Support websi
 * [2016-2017 Merchant Security Roadmap Microsite](https://www.paypal-knowledge.com/infocenter/index?page=content&id=FAQ1913&expand=true&locale=en_US)
 * [SSL Certificate Upgrade Microsite](https://www.paypal-knowledge.com/infocenter/index?page=content&id=FAQ1766&expand=true&locale=en_US)
 
+See also [Updating Your Production Environment to Support TLSv1.2](https://www.braintreepayments.com/blog/updating-your-production-environment-to-support-tlsv1-2/) on the Braintree blog.
+
 ## What does this mean for PayPal and Braintree merchants?
 
 Merchants must verify that their systems can use the TLSv1.2 protocol with a SHA-256 certificate. As a merchant, you must make sure that you are up-to-date with security updates, including current versions of operating systems, encryption libraries, and runtime environments.
@@ -36,7 +38,7 @@ To get started, use the following notes to verify the TLSv1.2 readiness in your 
 ### Java
 
 * [Java requirements](#java-requirements)
-* [To verify Java and TLS versions](#to-verify-java-and-tls-versions)
+* [To verify your Java and TLS versions](#to-verify-your-java-and-tls-versions)
 * [Supported SDKs](#supported-sdks-java)
 
 #### Java requirements
@@ -235,6 +237,7 @@ The `php_curl` library uses its own version of the OpenSSL library, which is not
 ### Ruby
 
 * [Ruby requirements](#ruby-requirements)
+* [PayPal legacy Ruby SDK update](#paypal-legacy-ruby-sdk-update)
 * [To verify your Ruby and TLS versions](#to-verify-your-ruby-and-tls-versions)
 
 #### Ruby requirements
@@ -246,9 +249,11 @@ The `php_curl` library uses its own version of the OpenSSL library, which is not
 
 * To update your dependencies, you might need to run `bundle update`.
 
-#### To verify Ruby and TLS versions
+#### PayPal legacy Ruby SDK update
 
-1. For the PayPal legacy Ruby SDK packaged as `PP_Ruby_NVP_SDK.zip`, download this [PP_Ruby_NVP_SDK.zip](https://github.com/paypal/TLS-update/blob/master/ruby/PP_Ruby_NVP_SDK.zip).
+For the PayPal legacy Ruby SDK packaged as `PP_Ruby_NVP_SDK.zip`, download this [PP_Ruby_NVP_SDK.zip](https://github.com/paypal/TLS-update/blob/master/ruby/PP_Ruby_NVP_SDK.zip).
+
+#### To verify your Ruby and TLS versions
 
 1. In a shell on your **production system**, run:
 
@@ -276,7 +281,7 @@ The `php_curl` library uses its own version of the OpenSSL library, which is not
 * Node.js uses the system supplied OpenSSL.
 * TLSv1.2 requires OpenSSL 1.0.1c or later.
 
-#### To verify Node and TLS versions
+#### To verify your Node and TLS versions
 
 1. In a shell on your **production system**, run:
 
