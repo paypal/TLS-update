@@ -34,6 +34,15 @@ SDK | TLSv1.2 supported version
 [merchant (merchant 2.x)](https://github.com/paypal/merchant-sdk-dotnet) | Requires [sdk-core 1.7.1 or later](https://github.com/paypal/sdk-core-dotnet/releases)
 legacy (merchant 1.x) | Not supported - please [upgrade to merchant 2.x](https://github.com/paypal/merchant-sdk-dotnet/wiki/Upgrade-Process-from-Legacy-Merchant-SDK)
 
+## PHP
+
+If your environment's default settings do not support TLS 1.2, you may specify a specific version of TLS to use starting in [1.6.4](https://github.com/paypal/PayPal-PHP-SDK/releases).
+
+```
+# See CURL_SSLVERSION_TLSv1_2 on http://php.net/manual/en/function.curl-setopt.php
+PayPalHttpConfig::$defaultCurlOptions[CURLOPT_SSLVERSION] = 6;
+```
+
 ## Android
 
 For Android SDK integrations, please verify you have at least one of the latest releases below for payments to continue operating on API 16-19 devices, as described [here](https://github.com/paypal/TLS-update#android).
@@ -47,8 +56,8 @@ SDK | TLSv1.2 supported version
 
 These languages do not require any SDK upgrades, but you still need to check your production system. Please see the following sections for language-specific support:
 
-* [Ruby](https://github.com/paypal/TLS-update#ruby)
 * [PHP](https://github.com/paypal/TLS-update#php)
 * [Python](https://github.com/paypal/TLS-update#python)
+* [Ruby](https://github.com/paypal/TLS-update#ruby)
 * [Node.js](https://github.com/paypal/TLS-update#nodejs)
 * [iOS](https://github.com/paypal/TLS-update#ios)
