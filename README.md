@@ -4,10 +4,9 @@ The Payment Card Industry Security Standards Council (PCI SSC) [mandates](http:/
 
 As part of this requirement, PayPal and Braintree are making this upgrade alongside the rest of the payments industry. PayPal and Braintree are updating its services to require TLS 1.2 for all HTTPS connections. PayPal and Braintree will also require HTTP/1.1 for all connections.
 
-For more official, relevant information, see the [PayPal Technical Support website](https://www.paypal-techsupport.com):
-* [TLS 1.2 and HTTP/1.1 Upgrade Microsite](https://www.paypal-knowledge.com/infocenter/index?page=content&id=FAQ1914&expand=true&locale=en_US)
-* [2016-2017 Merchant Security Roadmap Microsite](https://www.paypal-knowledge.com/infocenter/index?page=content&id=FAQ1913&expand=true&locale=en_US)
-* [SSL Certificate Upgrade Microsite](https://www.paypal-knowledge.com/infocenter/index?page=content&id=FAQ1766&expand=true&locale=en_US)
+For more official, relevant information, see the [2017-2018 Merchant Security Roadmap Microsite](https://www.paypal-notice.com/en/):
+* [TLS 1.2 and HTTP/1.1 Upgrade Microsite](https://www.paypal-notice.com/en/TLS-1.2-and-HTTP1.1-Upgrade/)
+* [SSL Certificate Upgrade Microsite](https://www.paypal-notice.com/en/SSL-Certificate-Upgrade-Microsite/)
 
 See also [Updating Your Production Environment to Support TLSv1.2](https://www.braintreepayments.com/blog/updating-your-production-environment-to-support-tlsv1-2/) on the Braintree blog.
 
