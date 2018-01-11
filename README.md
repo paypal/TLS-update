@@ -314,7 +314,7 @@ TLSv1.2 is the default for client connections in API 20 (Android 4.4W or `KITKAT
 
 All Android app developers must make sure that their code and PayPal or Braintree SDKs provide explicit support for TLSv1.2. To verify correct implementation, test apps on API 16 through 19 devices (Android 4.1 through 4.4 platforms).
 
-After the TLSv1.2 upgrade, native app support for user devices earlier than API 16 (Android 4.1 or `JELLY_BEAN`) are not available. Fortunately, as of December 11, 2017, [Google reports 0.9% of devices accessing the Play store are API 15 or earlier](http://developer.android.com/about/dashboards/index.html#Platform).
+After the TLSv1.2 upgrade, native app support for user devices earlier than API 16 (Android 4.1 or `JELLY_BEAN`) are not available. Fortunately, as of January 8, 2018, [Google reports 0.9% of devices accessing the Play store are API 15 or earlier](http://developer.android.com/about/dashboards/index.html#Platform).
 
 Users of the PayPal or Braintree Android SDKs must update to the latest version. To illustrate how to support TLSv1.2 outside of the SDK, we have provided an [example Android app](android/).
 
